@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gm</title>
+    {#  注意引入文件的方式  #}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+</head>
+<body>
+ <div class="layui-container">
+    <blockquote class="layui-elem-quote">
+        <h1>jieba分词</h1>
+    </blockquote>
+    <form action="/fenci2/" method="post">
+        <textarea name="txt" id="txt" placeholder="请输入要分词的文段" rows="10" cols="80"></textarea >
+        <hr class="layui-bg-red">
+        <input type="submit" value="提交" class="layui-btn"/>
+    </form>
+ </div>
+</body>
+</html>

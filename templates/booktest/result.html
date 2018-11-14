@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {#  注意引入文件的方式  #}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+</head>
+<body>
+ <div class="layui-container">
+    <blockquote class="layui-elem-quote">
+        {% for datum in data %}
+            {{ datum }}
+        {% endfor %}
+
+    </blockquote>
+ </div>
+</body>
+</html>
